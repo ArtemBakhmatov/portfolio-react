@@ -1,0 +1,128 @@
+.about {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    transition: all 0.3s ease-in;
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__descr {
+        width: 750px;
+        margin: 30px 0;
+        font-style: italic;
+        line-height: 24px;
+        color: var(--about-descr);
+    }
+    &__foto {
+        width: 300px;
+        height: 380px;
+        border-radius: 6px;
+        overflow: hidden;
+        &-img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+    &__skills {
+        &-descr {
+            color: var(--about-title);
+            margin: 10px 0;
+            font-weight: 700;
+            span {
+                color: var(--blue);
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        &__descr {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .about {
+        &__descr {
+            width: 450px;
+            font-size: 15px;
+        }
+        &__foto {
+            width: 220px;
+            height: 320px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        position: static;
+        transform: translateY(0%);
+        padding: 70px 0 100px 0;
+        &__flex {
+            flex-direction: column-reverse;
+        }
+        &__foto {
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        padding: 50px 0 110px 0;
+        &__descr {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 425px) {
+    .about {
+        padding: 50px 0 110px 0;
+        &__descr {
+            margin: 25px 0;
+        }
+        &__skills {
+            &-descr {
+                span {
+                    display: block;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .about {
+        padding: 50px 0 110px 0;
+        &__foto {
+            height: 280px;
+        }
+        &__descr {
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        &__skills {
+            &-descr {
+                span {
+                    display: block;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

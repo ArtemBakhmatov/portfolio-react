@@ -1,0 +1,127 @@
+.projectId {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    &__title {
+        text-align: center;
+        font-size: 50px;
+        letter-spacing: 1px;
+        color: var(--title-itemId);
+    }
+    &__wrapper {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img {
+        width: 850px;
+        height: 400px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow-item);
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+    &__skills {
+        margin-top: 20px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: var(--skills-itemId);
+    }
+    &__flex {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+} 
+
+@media (max-width: 1200px) {
+    .projectId {
+        &__title {
+            font-size: 45px;
+        }
+        &__skills {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .projectId {
+        &__title {
+            font-size: 40px;
+        }
+        &__skills {
+            font-size: 23px;
+        }
+        &__img {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projectId {
+        &__title {
+            font-size: 35px;
+        }
+        &__skills {
+            font-size: 22px;
+        }
+        &__img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .projectId {
+        &__title {
+            font-size: 32px;
+        }
+        &__skills {
+            font-size: 21px;
+        }
+        &__img {
+            width: 100%;
+            height: 270px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .projectId {
+        &__title {
+            font-size: 30px;
+        }
+        &__skills {
+            font-size: 20px;
+        }
+        &__img {
+            width: 100%;
+            height: 250px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .projectId {
+        &__title {
+            font-size: 28px;
+        }
+        &__skills {
+            font-size: 18px;
+        }
+        &__img {
+            width: 100%;
+            height: 205px;
+        }
+    }
+}

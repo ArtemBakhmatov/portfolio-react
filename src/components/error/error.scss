@@ -1,0 +1,19 @@
+.error {
+    min-height: calc(100vh - 50px);
+    &__wrapper {
+        min-height: calc(100vh - 50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__img {
+        width: 500px;
+    }
+    &__descr {
+        color: var(--blue);
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+}

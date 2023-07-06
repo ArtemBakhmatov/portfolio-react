@@ -1,0 +1,109 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--footer-bg);
+    box-shadow: var(--footer-box-shadow);
+    transition: all 0.3s ease-in;
+    &__wrapper {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__copyright {
+        color: var(--footer-text-color);
+        font-size: 13px;
+    }
+}
+
+.social {
+    display: flex;
+    list-style-type: none;
+    &__item {
+        margin: 0 5px;
+        
+    }
+    &__link {
+        width: 35px;
+        height: 35px;
+        box-shadow: var(--footer-box-shadow);
+        border-radius: 8px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        transition: all 0.2s ease-in;
+        &-svg {
+            width: 25px;
+            
+        }
+        &-bgGithub {
+            path {
+                fill: var(--colorGitSvg);
+            }
+            background-color: var(--bgGithub);
+            &:hover {
+                background-color: var(--bgGithub-hover);
+                .social__link-svg {
+                    path {
+                        fill: var(--colorGitSvg-hover);
+                    }
+                }
+            }
+        }
+        &-bgVk {
+            path {
+                fill: var(--colorVKSvg);
+            }
+            background-color: var(--bgVK);
+            &:hover {
+                background-color: var(--bgVK-hover);
+                .social__link-svg {
+                    path {
+                        fill: var(--colorVKSvg-hover);
+                    }
+                }
+            }
+        }
+        &-bgTelegram {
+            path {
+                fill: var(--colorTelegramSvg);
+            }
+            background-color:  var(--bgTelegram);
+            &:hover {
+                background-color: var(--bgTelegram-hover);
+                .social__link-svg {
+                    path {
+                        fill: var(--colorTelegramSvg-hover);
+                    }
+                }
+            }
+        }
+        &-bgWhatsApp {
+            path {
+                fill: var(--colorWhatsAppSvg);
+            }
+            background-color: var(--bgWhatsApp);
+            &:hover {
+                background-color: var(--bgWhatsApp-hover);
+                .social__link-svg {
+                    path {
+                        fill: var(--colorWhatsAppSvg-hover);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column-reverse;
+            height: 80px;
+            padding: 10px 0;
+        }
+    }
+}

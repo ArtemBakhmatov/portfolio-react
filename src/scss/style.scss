@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+@import 'fonts.scss';
+@import 'colors.scss';
+@import 'animation.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    //font-family: 'Poppins', sans-serif; 
+    //font-family: 'Roboto', sans-serif;
+    &::-webkit-scrollbar {
+        width: 13px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0 8px 8px 0;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--silver);
+    }
+ 
+}
+
+#root {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    transition: all 0.3s ease-in;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    padding: 0 10px;
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.textAnimation {
+    font-family: 'DM Sans', sans-serif;
+    position: relative;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--blue), var(--silver), var(--blue));
+    //background-repeat: no-repeat;
+    background-size: 85%;
+    animation: animate 7s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    &__bold {
+        font-family: 'Popins', sans-serif;
+        font-weight: 900;
+    }
+}
+
+.title-h1-before {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--about-title);
+    &::before {
+        content: "";
+        background: linear-gradient(90deg, var(--title-before),transparent);
+        position: absolute;
+        left: 12rem;
+        top: 50%;
+        width: 350px;
+        height: 2px;
+    }
+    &__carousel {
+        &::before {
+            left: 17.5rem;
+        }
+    }
+}
+
+.title-h2 {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--about-title);
+    &::before {
+        content: "";
+        background: linear-gradient(90deg, var(--title-before),transparent);
+        position: absolute;
+        left: 8rem;
+        top: 50%;
+        width: 350px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .title-h1-before {
+        font-size: 30px;
+        &::before {
+            left: 10rem;
+            width: 280px;
+        }
+        &__carousel {
+            &::before {
+                left: 15rem;
+            }
+        }
+    }
+
+    .title-h2 {
+        font-size: 24px;
+        &::before {
+            left: 7rem;
+            width: 320px;
+        }
+    }
+    .textAnimation {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .title-h1-before {
+        font-size: 28px;
+        &::before {
+            left: 10rem;
+        }
+        &__carousel {
+            &::before {
+                left: 14rem;
+            }
+        }
+        &__projects {
+            &::before {
+                left: 9rem;
+            }
+        }
+    }
+    .title-h2 {
+        font-size: 22px;
+    }
+    .textAnimation {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+    .textAnimation {
+        font-size: 18px;
+    }
+    .title-h1-before {
+        &::before {
+            width: 250px;
+        }
+        &__carousel {
+            &::before {
+                width: 190px;
+                left: 13.5rem;
+            }
+        }
+    }
+    .title-h2 {
+        &::before {
+            width: 295px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .textAnimation {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .title-h1-before {
+        font-size: 26px;
+        &::before {
+            width: 220px;
+            left: 9rem;
+        }
+        &__carousel {
+            &::before {
+                width: 160px;
+                left: 12.5rem;
+            }
+        }
+        &__projects {
+            &::before {
+                left: 8.5rem;
+            }
+        }
+    }
+    .title-h2 {
+        font-size: 21px;
+        &::before {
+            width: 255px;
+            left: 6.5rem;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .textAnimation {
+        font-size: 13px;
+    }
+    .title-h1-before {
+        font-size: 25px;
+        &::before {
+            width: 170px;
+            left: 8.5rem;
+        }
+        &__carousel {
+            &::before {
+                width: 115px;
+                left: 12rem;
+
+            }
+        }
+        &__projects {
+            &::before {
+                left: 8rem;
+            }
+        }
+    }
+    .title-h2 {
+        font-size: 20px;
+        &::before {
+            width: 210px;
+            left: 6rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
