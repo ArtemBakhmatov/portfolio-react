@@ -1,14 +1,14 @@
 .promo {
     &__wrapper {
-        //min-height: calc(100vh - 90px);
-    }
-    &__animation {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
         width: 600px;
+    }
+    &__animation {
+        position: relative;
         border-radius: 10px;
         overflow: hidden;
         padding: 4rem;
@@ -58,7 +58,7 @@
     }
     &__title {
         font-family: 'Popins', sans-serif;
-        color: var(--promo-text);
+        color: var(--promo-title);
         margin-top: 25px;
         font-size: 45px;
         border-right: solid 3px var(--cursor-anime);
@@ -143,6 +143,9 @@
         &__animation {
             width: 465px;
         }
+        &__wrapper {
+            width: 465px;
+        }
     }
 }
 
@@ -158,6 +161,9 @@
         &__animation {
             width: 400px;
             padding: 3rem;
+        }
+        &__wrapper {
+            width: 400px;
         }
         &__logo {
             width: 90px;
@@ -182,6 +188,9 @@
             width: 350px;
             padding: 2.5rem;
         }
+        &__wrapper {
+            width: 350px;
+        }
         &__logo {
             width: 80px;
             height: 80px;
@@ -203,7 +212,11 @@
         }
         &__animation {
             width: 300px;
-            padding: 2.5rem;
+            padding-left: 0px;
+            padding-right: 0;
+        }
+        &__wrapper {
+            width: 300px;
         }
         &__logo {
             width: 75px;

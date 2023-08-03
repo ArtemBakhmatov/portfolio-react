@@ -1,4 +1,6 @@
 import React from 'react';
+import Tilt from 'react-parallax-tilt';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 import './promo.scss';
@@ -10,21 +12,35 @@ const Promo = () => {
         <section className='promo'>
 			<div className="container">
 				<div className="promo__wrapper">
-					<div className="promo__animation">
+					<Tilt className='promo__animation'>
 						<div className="promo__flex">
-							<div className="promo__logo">
+							<motion.div 
+								initial={{ y: -300 }}
+								animate={{ y: -0 }}
+								transition={{ type: 'spring' }}
+								className="promo__logo"
+							>
 								<img src={logo} alt='' className="promo__logo-img" />
-							</div>
-							<div className="promo__subtitle">
+							</motion.div>
+							<motion.div
+								initial={{ x: -500 }}
+								animate={{ x: -0 }}
+								transition={{ type: 'spring' }}
+								className="promo__subtitle">
 								Меня зовут Артем Бахматов
-							</div>
+							</motion.div>
 							<h1 className="promo__title">
 								Я Web-Разработчик
 							</h1>
 							<div className="promo__descr">
 								Готов к обучению и саморазвитию
 							</div>
-							<div className="promo__btns">
+							<motion.div
+								initial={{ y: 300 }}
+								animate={{ y: -0 }}
+								transition={{ type: 'spring' }}
+								className="promo__btns"
+							>
 								<Link 
 									to='/about'
 									className='promo__link'
@@ -37,9 +53,10 @@ const Promo = () => {
 								>
 									Сертификаты
 								</Link>
-							</div>
+							</motion.div>
 						</div>
-					</div>
+					</Tilt>
+					
 				</div>
 			</div>
 		</section>

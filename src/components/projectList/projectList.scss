@@ -8,43 +8,58 @@
     }
     &__item {
         margin-top: 30px;
-        width: 250px;
-        box-shadow: var(--box-shadow-item);
+        padding: 15px;
+        width: 365px;
+        border: 1px solid var(--bg-border-item);
         border-radius: 10px;
-        background-color: var(--bg-item)
+        background-color: var(--bg-item);
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin: 15px 0;
+        color: var(--color-item-title);
     }
     &__link {
         text-decoration: none;
     }
     &__img {
-        width: 250px;
+        display: block;
+        margin: 0 auto;
+        width: 330px;
         border-radius: 10px;
-        box-shadow: var(--box-shadow-item);
+        border: 1px solid var(--dark-border-item);
     }
-    &__descr {
-        padding: 10px 10px 10px;
-        text-align: center;
-        font-weight: 700;
-        font-size: 22px;
-        color: var(--color-item);
+    &__hashtag {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        margin-top: 15px;
+        div {
+            margin-right: 5px;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media (max-width: 1200px) {
     .projects {
         &__item {
-            width: 220px;
+            width: 300px;
         }
         &__img {
-            width: 220px;
-        }
-        &__descr {
-            font-size: 20px;
+            width: 265px;
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .projects {
         &__list {
             justify-content: space-around;
@@ -52,45 +67,35 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .projects {
         &__item {
-            width: 200px;
+            width: 250px;
+            padding: 10px;
         }
         &__img {
-            width: 200px;
+            width: 225px;
         }
-        &__descr {
-            font-size: 18px;
+        &__btn {
+            padding: 5px 10px;
+        }
+        &__hashtag {
+            font-size: 13px;
+            div {
+                margin-right: 4px;
+            }
         }
     }
+}
+
+@media (max-width: 576px) {
+    
 }
 
 @media (max-width: 425px) {
-    .projects {
-        &__item {
-            width: 175px;
-        }
-        &__img {
-            width: 175px;
-        }
-        &__descr {
-            font-size: 16px;
-            padding: 8px;
-        }
-    }
+    
 }
 
 @media (max-width: 375px) {
-    .projects {
-        &__list {
-            justify-content: center;
-        }
-        &__item {
-            width: 220px;
-        }
-        &__img {
-            width: 220px;
-        }
-    }
+    
 }

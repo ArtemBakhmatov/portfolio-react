@@ -1,13 +1,14 @@
 :root {
     /* Colors */
     --dark: #23272f;
-    --white: white;
+    --white: white;  
     --black: #3f4655;
     --light-black: #404756;
     --silver: #c1c1c1;
-    --blue: #087ea4;
+    --blue: #0ea5e9;  // #087ea4
     --light-blue: #e6f7ff;
     --light-silver: #E7E8EB;
+    --light-white: #f8fafc;
     --super-light-silver: #f5f6f8;
     --cursor-anime: rgba(20, 158, 202, 0.75);
     --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
@@ -20,7 +21,7 @@
     --title-before: var(--blue);
 
     /* Promo */
-    --promo-bg: var(--white);
+    --promo-bg: var(--light-white);
     --promo-text: var(--black);
     --border-link: var(--light-silver);
 
@@ -37,9 +38,10 @@
     --contacts-descr: var(--light-black);
 
     /* ProjectList */
-    --box-shadow-item: var(--box-shadow);
-    --bg-item: var(--dark);
-    --color-item: var(--white);
+    --bg-border-item: var(--silver);
+    --bg-item: var(--light-white);
+    --color-item-title: var(--black);
+    --color-item-descr: var(--black);
 
     /* projectId */
     --title-itemId: var(--blue);
@@ -132,7 +134,11 @@
 
 .dark {
     /* Colors */
-    --dark: #23272f;
+    --dark: #0f172a; // #23272f #475569
+    --dark-bg: #1e293b;
+    --dark-title: #e2e8f0;
+    --dark-text: #8a99ad;
+    --dark-border: #475569;
     --dark-nav-bg-hover: #283542;
     --dark-nav-bg-active: #474f5c;
     --box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
@@ -154,14 +160,15 @@
     --footer-text-color: var(--white);
 
     /* Promo */
-    --promo-bg: var(--dark);
-    --promo-text: var(--white);
+    --promo-bg: var(--dark-bg);
+    --promo-title: var(--dark-title);
+    --promo-text: var(--dark-text);
     --border-link: var(--blue);
 
     /* About */
     --about-bg: var(--dark);
-    --about-title: var(--white);
-    --about-descr: var(--white);
+    --about-title: var(--dark-title);
+    --about-descr: var(--dark-text);
     --about-skills: var(--white);
 
     /* Contacts */
@@ -175,9 +182,10 @@
     --border-btnLink: var(--blue);
 
     /* ProjectList */
-    --box-shadow-item: var(--box-shadow);
-    --bg-item: var(--white);
-    --color-item: var(--black);
+    --bg-border-item: var(--dark-border);
+    --bg-item: var(--dark-bg);
+    --color-item-title: var(--dark-title);
+    --color-item-descr: var(--dark-text);
 
     /* projectId */
     --title-itemId: var(--white);

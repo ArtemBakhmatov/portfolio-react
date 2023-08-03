@@ -13,6 +13,48 @@
         margin-top: 50px;
         text-align: center;
     }
+    &__animation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.3s ease-in;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: -2;
+            left: -50%;
+            top: -50%;
+            width: 200%;
+            height: 200%;
+            background-color: #399953;
+            background-repeat: no-repeat;
+            background-size: 50% 50%, 50% 50%;
+            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            background-image: linear-gradient(var(--blue), var(--blue)), linear-gradient(var(--white), var(--white)), linear-gradient(var(--blue), var(--blue)), linear-gradient(var(--white), var(--white));
+            animation: rotate 8s linear infinite;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 2px;
+            top: 2px;
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            background: var(--promo-bg);
+            border-radius: 5px;
+        } 
+    }
     &__subtitle {
         margin-top: 40px;
         font-size: 40px;
@@ -76,6 +118,9 @@
             font-size: 16px;
             margin-top: 15px;
         }
+        &__animation {
+            width: 550px;
+        }
     }
 }
 
@@ -99,6 +144,10 @@
             font-size: 15px;
             margin-top: 10px;
         }
+        &__animation {
+            width: 465px;
+            padding: 2rem;
+        }
     }
 }
 
@@ -111,8 +160,8 @@
             font-size: 32px;
         }
         &__subtitle {
-            font-size: 28px;
-            margin-top: 20px;
+            font-size: 25px;
+            margin-top: 25px;
         }
         &__descr {
             font-size: 14px;
@@ -121,6 +170,10 @@
         &__link {
             font-size: 15px;
             margin-top: 10px;
+        }
+        &__animation {
+            width: 400px;
+            padding: 1.5rem;
         }
     }
 }
@@ -131,14 +184,16 @@
             font-size: 30px;
         }
         &__subtitle {
-            font-size: 25px;
-            margin-top: 20px;
+            font-size: 20px;
         }
         &__descr {
             font-size: 13px;
         }
         &__link {
             font-size: 14px;
+        }
+        &__animation {
+            width: 350px;
         }
     }
 }
@@ -149,14 +204,18 @@
             font-size: 28px;
         }
         &__subtitle {
-            font-size: 21px;
-            margin-top: 20px;
+            font-size: 18px;
         }
         &__descr {
             font-size: 13px;
         }
         &__link {
             font-size: 14px;
+        }
+        &__animation {
+            width: 300px;
+            padding-left: 0px;
+            padding-right: 0;
         }
     }
 }

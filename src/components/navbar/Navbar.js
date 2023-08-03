@@ -2,6 +2,8 @@ import { NavLink, Link } from 'react-router-dom';
 
 import './navbar.scss';
 
+import pdfResume from '../../assets/pdf/Resume_Bakhmatov.pdf';
+
 const Navbar = ({toggleHamburger, handleTouchStart, handleTouchMove}) => {
     const normalLink = 'nav__link',
           activeLink = 'nav__link nav__link-active';
@@ -35,7 +37,7 @@ const Navbar = ({toggleHamburger, handleTouchStart, handleTouchMove}) => {
                 <li className="nav__item">
                     <Link
                         onClick={() => toggleHamburger()}
-                        to='https://ya.ru/'
+                        to={ pdfResume }
                         target='_blank'
                         className='nav__link'
                     >
