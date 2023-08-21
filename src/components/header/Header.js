@@ -18,12 +18,10 @@ const Header = () => {
             document.querySelector('.hamburger').classList.add('hamburger__active');
             document.querySelector('.hamburger__wrapper').classList.add('hamburger__wrapper-active');
             document.querySelector('.nav').classList.add('nav__active');
-            document.body.classList.add('hidden');
         } else {
             document.querySelector('.hamburger').classList.remove('hamburger__active');
             document.querySelector('.hamburger__wrapper').classList.remove('hamburger__wrapper-active');
             document.querySelector('.nav').classList.remove('nav__active');
-            document.body.classList.remove('hidden');
         }
     }, [menuActive]);
 

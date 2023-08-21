@@ -38,8 +38,6 @@ const ProjectsPage = () => {
                 </motion.div>
             }
 
-            
-
         </>
         
     );
