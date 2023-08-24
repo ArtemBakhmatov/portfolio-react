@@ -1,0 +1,255 @@
+:root {
+    /* Colors */
+    --dark: #23272f;
+    --white: white;  
+    --black: #3f4655;
+    --light-black: #404756;
+    --silver: #c1c1c1;
+    --blue: #0ea5e9;  // #087ea4
+    --light-blue: #e6f7ff;
+    --light-silver: #E7E8EB;
+    --light-white: #f8fafc;
+    --super-light-silver: #f5f6f8;
+    --cursor-anime: rgba(20, 158, 202, 0.75);
+    --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+
+    /* Hamburger */
+    --hamburger-bg: var(--blue);
+    --hamburger-bg-active: var(--white);
+
+    /* Title */
+    --title-before: var(--blue);
+
+    /* Promo */
+    --promo-bg: var(--light-white);
+    --promo-text: var(--black);
+    --border-link: var(--light-silver);
+
+    /* About */
+    --about-bg: var(--white);
+    --about-title: var(--black);
+    --about-descr: var(--light-black);
+    --about-skills: var(--blue);
+
+    /* Contacts */
+    --contacts-title: var(--blue);
+    --contacts-link: var(--blue);
+    --contacts-subtitle: var(--light-black);
+    --contacts-descr: var(--light-black);
+
+    /* ProjectList */
+    --bg-border-item: var(--silver);
+    --bg-item: var(--light-white);
+    --color-item-title: var(--black);
+    --color-item-descr: var(--black);
+
+    /* projectId */
+    --title-itemId: var(--blue);
+    --skills-itemId: var(--black);
+
+
+    /* Nav */
+    --nav-text: var(--black);
+    --nav-text-active: var(--blue);
+    --nav-border: var(--white);
+    --nav-border-hover: var(--light-silver);
+    --nav-border-active: var(--light-blue);
+    --nav-bg-hover: var(--light-silver);
+    --nav-bg-normal: var(--white);
+    --nav-bg-active: var(--light-blue);
+    --nav-bg: rgba(8, 126, 164, 0.8);
+
+    /* btnLink */
+    --bg-btnLink: var(--blue);
+    --border-btnLink: var(--light-silver);
+
+    /* Header */
+	--header-bg: var(--white);
+    --header-box-shadow: 0 0 10px var(--silver);
+
+    /* footer */
+	--footer-bg: var(--white);
+    --footer-box-shadow: 0 0 10px var(--silver);
+    --footer-text-color: var(--black);
+
+    /* Slider */
+    --slider-bg-1: var(--blue);
+    --slider-bg-2: var(--white);
+    --slider-bg-3: var(--white);
+    --slider-box-shadow: 0 0 10px var(--silver);
+
+
+    /* SocialNetworkIcons */
+    // github
+    --colorBlackGit: black;
+    --colorWhiteGit: white;
+    --bgGithub: var(--colorBlackGit);
+    --bgGithub-hover: var(--colorWhiteGit);
+    --colorGitSvg: var(--colorWhiteGit);
+    --colorGitSvg-hover: var(--colorBlackGit);
+
+    // VK
+    --colorBlueVK: #0077ff;
+    --colorWhiteVK: white;
+    --bgVK: var(--colorBlueVK);
+    --bgVK-hover: var(--colorWhiteVK);
+    --colorVKSvg: var(--colorWhiteVK);
+    --colorVKSvg-hover: var(--colorBlueVK);
+
+    // TelegraTelegram
+    --colorBlueTelegram: #0077ff;
+    --colorWhiteTelegram: white;
+    --bgTelegram: var(--colorBlueTelegram);
+    --bgTelegram-hover: var(--colorWhiteTelegram);
+    --colorTelegramSvg: var(--colorWhiteTelegram);
+    --colorTelegramSvg-hover: var(--colorBlueTelegram);
+
+    // WhatsApp
+    --colorGreenWhatsApp: #50cd5e;
+    --colorWhiteWhatsApp: white;
+    --bgWhatsApp: var(--colorGreenWhatsApp);
+    --bgWhatsApp-hover: var(--colorWhiteWhatsApp);
+    --colorWhatsAppSvg: var(--colorWhiteWhatsApp);
+    --colorWhatsAppSvg-hover: var(--colorGreenWhatsApp);
+}
+
+.light {
+    
+    &::-webkit-scrollbar {
+        width: 13px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0 8px 8px 0;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--silver);
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+        border-radius: 0px;
+        background-color: var(--super-light-silver);
+    }
+    transition: all 0.3s ease-in;
+}
+
+.dark {
+    /* Colors */
+    --dark: #0f172a; // #23272f #475569
+    --dark-bg: #1e293b;
+    --dark-title: #e2e8f0;
+    --dark-text: #8a99ad;
+    --dark-border: #475569;
+    --dark-nav-bg-hover: #283542;
+    --dark-nav-bg-active: #474f5c;
+    --box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);
+
+    /* Hamburger */
+    --hamburger-bg: var(--white);
+    --hamburger-bg-active: var(--dark);
+
+    /* Title */
+    --title-before: var(--white);
+
+    /* Header */
+    --header-bg: var(--dark);
+    --header-box-shadow: 0 0 1px var(--silver);
+
+    /* footer */
+	--footer-bg: var(--dark);
+    --footer-box-shadow: 0 0 1px var(--silver);
+    --footer-text-color: var(--white);
+
+    /* Promo */
+    --promo-bg: var(--dark-bg);
+    --promo-title: var(--dark-title);
+    --promo-text: var(--dark-text);
+    --border-link: var(--blue);
+
+    /* About */
+    --about-bg: var(--dark);
+    --about-title: var(--dark-title);
+    --about-descr: var(--dark-text);
+    --about-skills: var(--white);
+
+    /* Contacts */
+    --contacts-title: var(--white);
+    --contacts-link: var(--white);
+    --contacts-subtitle: var(--white);
+    --contacts-descr: var(--white);
+
+    /* btnLink */
+    --bg-btnLink: var(--blue);
+    --border-btnLink: var(--blue);
+
+    /* ProjectList */
+    --bg-border-item: var(--dark-border);
+    --bg-item: var(--dark-bg);
+    --color-item-title: var(--dark-title);
+    --color-item-descr: var(--dark-text);
+
+    /* projectId */
+    --title-itemId: var(--white);
+    --skills-itemId: var(--white);
+
+    /* Slider */
+    --slider-bg-1: var(--white);
+    --slider-bg-2: var(--blue);
+    --slider-bg-3: var(--dark);
+    --slider-box-shadow: 0 0 3px var(--silver);
+
+    /* SocialNetworkIcons */
+    --colorBlack: black;
+    --colorWhite: white;
+    --bgGithub: var(--colorWhite);
+    --bgGithub-hover: var(--colorBlack);
+    --colorGitSvg: var(--colorBlack);
+    --colorGitSvg-hover: var(--colorWhite);
+
+    // VK
+    --colorBlueVK: #0077ff;
+    --colorWhiteVK: white;
+    --bgVK: var(--colorWhiteVK);
+    --bgVK-hover: var(--colorBlueVK);
+    --colorVKSvg: var(--colorBlueVK);
+    --colorVKSvg-hover: var(--colorWhiteVK);
+
+    // TelegraTelegram
+    --colorBlueTelegram: #0077ff;
+    --colorWhiteTelegram: white;
+    --bgTelegram: var(--colorWhiteTelegram);
+    --bgTelegram-hover: var(--colorBlueTelegram);
+    --colorTelegramSvg: var(--colorBlueTelegram);
+    --colorTelegramSvg-hover: var(--colorWhiteTelegram);
+
+    // WhatsApp
+    --colorGreenWhatsApp: #50cd5e;
+    --colorWhiteWhatsApp: white;
+    --bgWhatsApp: var(--colorWhiteWhatsApp);
+    --bgWhatsApp-hover: var(--colorGreenWhatsApp);
+    --colorWhatsAppSvg: var(--colorGreenWhatsApp);
+    --colorWhatsAppSvg-hover: var(--colorWhiteWhatsApp);
+
+    /* Nav */
+    --nav-text: var(--white);
+    --nav-text-active: var(--white);
+    --nav-border: var(--dark);
+    --nav-bg-normal: var(--dark);
+    --nav-bg-hover: var(--dark-nav-bg-hover);
+    --nav-border-hover: var(--dark-nav-bg-hover);
+    --nav-bg-active: var(--dark-nav-bg-active);
+    --nav-border-active: var(--dark-nav-bg-active);
+    //--nav-bg: rgba(255, 255, 255, 0.8);
+    
+    background-color: var(--dark);
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 1px var(--silver);
+        border-radius: 0px;
+        background-color: var(--dark);
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--dark-nav-bg-active);
+    }
+
+    transition: all 0.3s ease-in;
+}
